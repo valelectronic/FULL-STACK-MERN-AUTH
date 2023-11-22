@@ -1,6 +1,7 @@
 import      Express  from "express";
 import Dotenv  from "dotenv"
 Dotenv.config();
+import cookieParser from "cookie-parser";
 import { notFound,errorHandler } from "./middleware/ErrorMiddleware.js";
 import connecting from "./config/db.js";
 const port  = process.env.PORT || 500
@@ -10,6 +11,8 @@ connecting()
 const app = Express()
 app.use(Express.json())
 app.use(Express.urlencoded({extended:true}))
+
+app.use(cookieParser())
 
 app.use('/api/users', userRoutes)
 
