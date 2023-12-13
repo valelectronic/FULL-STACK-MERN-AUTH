@@ -5,9 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/server.jsx",
+    "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm run dev --prefix vite-project"
+    "client": "npm run dev --prefix frontend",
+    "dev" : "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "victor valentine",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "mongoose": "^8.0.0"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.0.1"
   }
 }
