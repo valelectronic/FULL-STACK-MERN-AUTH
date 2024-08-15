@@ -12,6 +12,7 @@ const router = Express.Router()
 router.post('/register', registerUser)
 router.post('/auth', authUser)
 router.post('/logout', logOutUser)
+// for both getting profile and updating it 
 router.route('/profile').get(protect, getProfile).put(protect, updateProfile)
 
 export default router

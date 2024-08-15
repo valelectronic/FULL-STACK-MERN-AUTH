@@ -1,12 +1,19 @@
 
 import './main.jsx'
 
+import { Outlet } from 'react-router-dom'
+
+
 function App() {
   
 
   return (
     <>
-    <h1 className='font-bold text-lg text-green-200'>mern auth </h1>
+    <div>
+     
+      <Outlet/>
+    </div>
+    
     </>
   )
 }

@@ -21,5 +21,5 @@ const protect = expressAsyncHandler(async(req, res, next)=>{
         throw new Error('not authorized, no token ')
     }
 })
-
+// not exported as default because we might need to add more middleware
 export {protect}

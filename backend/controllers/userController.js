@@ -59,7 +59,7 @@ import { Error } from 'mongoose'
  )
 
   //@desc logout user
- //route post  /api/users/logout
+ //route post/api/users/logout
  //@access public 
  const logOutUser =asyncHandler(async (req, res)=>{
    res.cookie('jwt', " ", {
