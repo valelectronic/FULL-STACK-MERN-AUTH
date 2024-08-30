@@ -25,10 +25,10 @@ function Header() {
           <Link to='/'>
           <li className='hidden sm:inline text-slate-800 hover:underline'>Home</li>
           </Link>
-          <Link to='/About'>
+          <Link to='/AboutUs'>
           <li className='hidden sm:inline text-slate-700 hover:underline'>About</li>
           </Link>
-          <Link to='/Sign-In'>
+          <Link to='/SignIn'>
           <li className=' text-slate-700 hover:underline'>Sign In</li>
           </Link>
         </ul>
